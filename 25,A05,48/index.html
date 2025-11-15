@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarthak Goyal | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Sarthak Goyal</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="themeToggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero fade-in">
+        <img src="diwali pic.jpg" alt="Sarthak Profile" class="profile-pic" />
+        <h2>Hello, I'm <span>Sarthak Goyal</span></h2>
+        <p>B.Tech CSE Student | Web Developer | Programmer</p>
+    </section>
+
+    <section id="about" class="about slide-up">
+        <h2>About Me</h2>
+        <p>
+            I’m a Computer Science student at Delhi Technological University, passionate about
+            coding, design, and development. I love creating websites that look good and perform well.
+        </p>
+    </section>
+
+    <section id="education" class="education slide-up">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech in CSE</strong> | Delhi Technological University</li>
+            <li>Roll No: 25/A05/048</li>
+            <li>Email: sarthakgoyal610@gmail.com</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="skills slide-up">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C Programming</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>Web Development</span>
+            <span>UI/UX Basics</span>
+        </div>
+    </section>
+
+    <section id="projects" class="projects slide-up">
+        <h2>Projects</h2>
+        <div class="project-card zoom">
+            <h3>Advanced Portfolio Website</h3>
+            <p>Fully responsive website with animations, dark mode, and modern UI.</p>
+        </div>
+        <div class="project-card zoom">
+            <h3>Student Record System (C)</h3>
+            <p>Manages student data using file handling concepts.</p>
+        </div>
+        <div class="project-card zoom">
+            <h3>Basic Calculator (C++)</h3>
+            <p>Performs simple arithmetic operations.</p>
+        </div>
+        <div class="project-card zoom">
+            <h3>To-Do App (Java)</h3>
+            <p>A small application to manage tasks with save/load functionality.</p>
+        </div>
+        <div class="project-card zoom">
+            <h3>Landing Page (HTML/CSS)</h3>
+            <p>A stylish and responsive landing page for beginners.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact slide-up">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: sarthakgoyal610@gmail.com</li>
+            <li><a href="https://github.com/Sarthakgoyal2">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/sarthak-goyal-348447358">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Sarthak Goyal | All Rights Reserved</p>
+    </footer>
+
+<script>
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        toggle.textContent = document.body.classList.contains('dark') ? '☀' : '🌙';
+    });
+</script>
+
+</body>
+</html>
